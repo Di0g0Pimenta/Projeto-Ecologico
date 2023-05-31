@@ -1,8 +1,154 @@
-.splash {
+.Div-Screan {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f1f1f1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 390px;
+    height: 844px;
 }
 
+/*Splash Screan*/
+.Splash-Logo {
+    position: absolute;
+    width: 247px;
+    height: 307px;
+    left: 71px;
+    top: 268px;
+}
+
+/*Start Screan*/
+.Start-Logo {
+    position: absolute;
+    width: 247px;
+    height: 307px;
+    top: 100px;
+    left: 71px;
+}
+
+.Button-Login {
+    position: absolute;
+    width: 322px;
+    height: 63px;
+    left: 35px;
+    top: 505px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    background: #4BCC3C;
+    border-radius: 26px;
+    border: none;
+}
+
+.Button-Login:hover {
+    background: #8CCB85;
+}
+
+.Button-Login:active {
+    background: #3E8100;
+    ;
+}
+
+.Button-Register {
+    position: absolute;
+    width: 322px;
+    height: 63px;
+    left: 32px;
+    top: 624px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    background: #4BCC3C;
+    border-radius: 26px;
+    border: none;
+}
+
+.Button-Register:hover {
+    background: #8CCB85;
+}
+
+.Button-Register:active {
+    background: #3E8100;
+    ;
+}
+
+/*Login Screan*/
+.Welcome-Title {
+    position: absolute;
+    left: 19px;
+    top: 65px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+
+}
+
+.Eco {
+    color: #90FF1A;
+}
+
+.Spot {
+    color: #004741;
+}
+
+.Form-Login {
+    position: absolute;
+    width: 342px;
+    height: 307px;
+    left: 24px;
+    top: 141px;
+}
+
+.Form-Text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.From-Input {
+    display: flex;
+    flex-direction: row;
+
+    width: 342px;
+    height: 40px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.Google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 65px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+}
