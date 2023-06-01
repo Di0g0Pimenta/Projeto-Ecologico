@@ -84,7 +84,7 @@
     ;
 }
 
-/*Login Screan*/
+/*Login  Register Screan*/
 .Welcome-Title {
     position: absolute;
     left: 19px;
@@ -138,7 +138,7 @@
     border-radius: 10px;
 }
 
-.Google {
+.Google-Button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -147,8 +147,168 @@
     position: absolute;
     width: 342px;
     height: 40px;
-    top: 65px;
+    top: 513px;
+    left: 24px;
 
     background: #F0F0F0;
     border-radius: 10px;
+    border: none;
+}
+
+.Microsoft-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 557px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Apple-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 601px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Facebook-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 645px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Button-Login-Screan {
+    position: absolute;
+    width: 322px;
+    height: 63px;
+    left: 24px;
+    top: 728px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    background: #4BCC3C;
+    border-radius: 26px;
+    border: none;
+}
+
+.Button-Login-Screan:hover {
+    background: #8CCB85;
+}
+
+.Button-Login-Screan:active {
+    background: #3E8100;
+    ;
+}
+
+/*Home User Screan*/
+
+.Home-Title {
+    position: absolute;
+    left: 153px;
+    top: 65px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+}
+
+.Buttons-List {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 342px;
+    height: 160px;
+
+    background: #90FF1A;
+    border-radius: 32px;
+    border: none;
+}
+
+.List-User {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    position: absolute;
+    width: 342px;
+    height: 501px;
+    left: 24px;
+    top: 183px;
+    overflow-y: scroll;
+}
+
+.Buttons-List-History {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 342px;
+    height: 160px;
+    top: 190px;
+
+    background: #90FF1A;
+    border-radius: 32px;
+    border: none;
 }
