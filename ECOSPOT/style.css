@@ -130,12 +130,27 @@
     display: flex;
     flex-direction: row;
 
-    width: 342px;
+    width: 322px;
     height: 40px;
 
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 10px;
+    padding-left: 20px
+}
+
+.From-Input:placeholder {
+    padding-left: 20px
+}
+
+.Error-Message {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 29px;
+
+    color: #ff0000;
 }
 
 .Google-Button {
