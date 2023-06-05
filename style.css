@@ -1,0 +1,329 @@
+.Div-Screan {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 390px;
+    height: 844px;
+}
+
+/*Splash Screan*/
+.Splash-Logo {
+    position: absolute;
+    width: 247px;
+    height: 307px;
+    left: 71px;
+    top: 268px;
+}
+
+/*Start Screan*/
+.Start-Logo {
+    position: absolute;
+    width: 247px;
+    height: 307px;
+    top: 100px;
+    left: 71px;
+}
+
+.Button-Login {
+    position: absolute;
+    width: 322px;
+    height: 63px;
+    left: 35px;
+    top: 505px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    background: #4BCC3C;
+    border-radius: 26px;
+    border: none;
+}
+
+.Button-Login:hover {
+    background: #8CCB85;
+}
+
+.Button-Login:active {
+    background: #3E8100;
+    ;
+}
+
+.Button-Register {
+    position: absolute;
+    width: 322px;
+    height: 63px;
+    left: 32px;
+    top: 624px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    background: #4BCC3C;
+    border-radius: 26px;
+    border: none;
+}
+
+.Button-Register:hover {
+    background: #8CCB85;
+}
+
+.Button-Register:active {
+    background: #3E8100;
+    ;
+}
+
+/*Login  Register Screan*/
+.Welcome-Title {
+    position: absolute;
+    left: 19px;
+    top: 65px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+
+}
+
+.Eco {
+    color: #90FF1A;
+}
+
+.Spot {
+    color: #004741;
+}
+
+.Form-Login {
+    position: absolute;
+    width: 342px;
+    height: 307px;
+    left: 24px;
+    top: 141px;
+}
+
+.Form-Text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.From-Input {
+    display: flex;
+    flex-direction: row;
+
+    width: 322px;
+    height: 40px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding-left: 20px
+}
+
+.From-Input:placeholder {
+    padding-left: 20px
+}
+
+.Error-Message {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 29px;
+
+    color: #ff0000;
+}
+
+.Google-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 513px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Microsoft-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 557px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Apple-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 601px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Facebook-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 342px;
+    height: 40px;
+    top: 645px;
+    left: 24px;
+
+    background: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+
+.Button-Login-Screan {
+    position: absolute;
+    width: 322px;
+    height: 63px;
+    left: 24px;
+    top: 728px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    background: #4BCC3C;
+    border-radius: 26px;
+    border: none;
+}
+
+.Button-Login-Screan:hover {
+    background: #8CCB85;
+}
+
+.Button-Login-Screan:active {
+    background: #3E8100;
+    ;
+}
+
+/*Home User Screan*/
+
+.Home-Title {
+    position: absolute;
+    left: 153px;
+    top: 65px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+}
+
+.Buttons-List {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 342px;
+    height: 160px;
+
+    background: #90FF1A;
+    border-radius: 32px;
+    border: none;
+}
+
+.List-User {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    position: absolute;
+    width: 342px;
+    height: 501px;
+    left: 24px;
+    top: 183px;
+    overflow-y: scroll;
+}
+
+.Buttons-List-History {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 342px;
+    height: 160px;
+    top: 190px;
+
+    background: #90FF1A;
+    border-radius: 32px;
+    border: none;
+}
