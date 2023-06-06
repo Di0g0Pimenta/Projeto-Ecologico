@@ -40,9 +40,6 @@ async function registerUser() {
       return;
     }
 
-    // Fazer login com o email e senha fornecidos
-    await signInWithEmailAndPassword(auth, email, password);
-
     // Criar o usuário no Firebase Authentication
     const { user } = await createUserWithEmailAndPassword(auth, email, password);
 
@@ -60,12 +57,12 @@ async function registerUser() {
     passwordInput.value = '';
 
     // Redirecionar para a página de sucesso
-    window.location.href = 'Login.html';
+    window.location.href = 'http://127.0.0.1:5500/Pages/Login.html';
 
-    
+
   } catch (error) {
     console.log(error);
-    errorMessage.textContent = 'An error occurred. Please try again.';
+    errorMessage.textContent = 'Ocorreu algum erro. Por favor tente outra vez.';
   }
 }
 
