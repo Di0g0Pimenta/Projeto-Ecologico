@@ -17,7 +17,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
 
-// Referências aos elementos do formulário
+// Referências aos elementos do formulário 
 const nameInput = document.querySelector('.From-Input[placeholder="Name"]');
 const emailInput = document.querySelector('.From-Input[placeholder="Email"]');
 const passwordInput = document.querySelector('.From-Input[placeholder="Password"]');
