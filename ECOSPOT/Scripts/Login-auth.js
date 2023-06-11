@@ -37,14 +37,8 @@ async function loginUser() {
       console.log(user.user)
   
       // já obtive o user, e tenho o email
-      console.log(user.user.email)
       // ir à bd buscar o user com o email
-      const userSnapshot = await db.collection('users').where('email', '==', user.user.email).get();
-      console.log(userSnapshot)
-    
       // já obtive o user da bd
-      //const userFromDB = userSnapshot.docs
-      //console.log(userFromDB)
       // já posso validar o seu tipo
 
       // Limpar os campos do formulário

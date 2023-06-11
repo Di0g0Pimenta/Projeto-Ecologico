@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECOSPOT</title>
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/Styles/Home-Admin-Map.css">
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
@@ -17,18 +18,24 @@
 <body>
     <div class="Div-Screan">
         <h1 class="Home-Admin-Title">Home</h1>
-        <div class="Map-Admin">
-            <div id='map' style='width: 341px; height: 632px;left: 24px;
-            top: 180px;'></div>
-        </div>
+        
+        <div class="tab-container">
+            <div class="tab-navigation">
+              <div class="tab-label" onclick="openTab(event, 'tab1')">List</div>
+              <div class="tab-label" onclick="openTab(event, 'tab2')">Map</div>
+            </div>
+          
+            <div id="tab1" class="tab-content active">
+                <button class="Buttons-List" onclick="openOverlay()">Ecollect Point</button>
+            </div>
+          
+            <div id="tab2" class="tab-content">
+              <div id="map"></div>
+            </div>
+          </div>
     </div>
 </body>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGlvZ29waW1lbnRhIiwiYSI6ImNsaWxnZ2JnMDAyaXAzY3B2MWRxNHMxdjgifQ.n7_w6LbXwGRl183yIEL4jA';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-    });
-</script>
+<script src="/Scripts/map.js"></script>
+<script src="/Scripts/Tabs-Admin.js"></script>
 
 </html>

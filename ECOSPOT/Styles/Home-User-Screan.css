@@ -73,3 +73,140 @@
     border-radius: 32px;
     border: none;
 }
+
+#overlay {
+    position: relative;
+    width: 342px;
+    height: 620px;
+
+    background: #3E8100;
+}
+
+#overlay h2 {
+    position: absolute;
+    width: 256px;
+    height: 84px;
+    left: 49px;
+    top: 32px;
+
+    width: 248px;
+    height: 76px;
+
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#label-Location {
+    position: absolute;
+    width: 161px;
+    height: 20px;
+    left: 20px;
+    top: 144px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+#Lable-Eco {
+    position: absolute;
+    width: 128px;
+    height: 19px;
+    left: 20px;
+    top: 232px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+#lable-Img {
+    position: absolute;
+    width: 120px;
+    height: 19px;
+    left: 21px;
+    top: 319px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+#overlay input[type="text"] {
+    position: absolute;
+    width: 302px;
+    height: 40px;
+    left: 20px;
+    top: 174px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#overlay input[type="selector"] {
+    position: absolute;
+    width: 302px;
+    height: 40px;
+    left: 20px;
+    top: 261px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#overlay input[type="file"] {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 20px;
+    top: 351px;
+    border: none;
+    background-image: url("/Assents/Icons/wallpaper.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#overlay button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#overlay button[type="submit"] {
+    background-color: #008CBA;
+}
+
+#overlay button[type="button"] {
+    background-color: #f44336;
+}

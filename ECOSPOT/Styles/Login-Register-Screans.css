@@ -1,7 +1,7 @@
 .Welcome-Title {
     position: absolute;
-    left: 19px;
-    top: 65px;
+    left: 24px;
+    top: 92px;
 
     font-family: 'Mogra';
     font-style: normal;
@@ -10,7 +10,6 @@
     line-height: 38px;
 
     color: #000000;
-
 }
 
 .Eco {
@@ -24,12 +23,15 @@
 .Form-Login {
     position: absolute;
     width: 342px;
-    height: 307px;
+    height: 178px;
     left: 24px;
-    top: 141px;
+    top: 302px;
 }
 
 .Form-Text {
+    margin: 0;
+    margin-bottom: 10px;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -40,16 +42,14 @@
 }
 
 .From-Input {
-    display: flex;
-    flex-direction: row;
-
-    width: 322px;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 342px;
     height: 40px;
 
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 10px;
-    padding-left: 20px
 }
 
 .From-Input:placeholder {
@@ -66,80 +66,32 @@
     color: #ff0000;
 }
 
-.Google-Button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+.Button-Register-Screan {
     position: absolute;
     width: 342px;
-    height: 40px;
-    top: 513px;
+    height: 63px;
     left: 24px;
+    top: 652px;
 
-    background: #F0F0F0;
-    border-radius: 10px;
-    border: none;
-}
+    font-family: 'Mogra';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
 
-.Microsoft-Button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    color: #FFFFFF;
 
-    position: absolute;
-    width: 342px;
-    height: 40px;
-    top: 557px;
-    left: 24px;
-
-    background: #F0F0F0;
-    border-radius: 10px;
-    border: none;
-}
-
-.Apple-Button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    width: 342px;
-    height: 40px;
-    top: 601px;
-    left: 24px;
-
-    background: #F0F0F0;
-    border-radius: 10px;
-    border: none;
-}
-
-.Facebook-Button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    width: 342px;
-    height: 40px;
-    top: 645px;
-    left: 24px;
-
-    background: #F0F0F0;
-    border-radius: 10px;
+    background: #4BCC3C;
+    border-radius: 26px;
     border: none;
 }
 
 .Button-Login-Screan {
     position: absolute;
-    width: 322px;
+    width: 342px;
     height: 63px;
     left: 24px;
-    top: 728px;
+    top: 725px;
 
     font-family: 'Mogra';
     font-style: normal;

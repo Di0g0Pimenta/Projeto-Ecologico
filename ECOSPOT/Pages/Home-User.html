@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECOSPOT</title>
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/Styles/Home-User-Screan.css">
 </head>
 
@@ -13,10 +14,35 @@
     <div class="Div-Screan">
         <h1 class="Home-Title">Home</h1>
         <div class="List-User">
-            <button class="Buttons-List">New Collection Point <img src="/Assents/Icons/plus-circle.svg" alt=""></button>
+            <button class="Buttons-List" onclick="openOverlay()">New Collection Point <img src="/Assents/Icons/plus-circle.svg" alt=""></button>
             <button class="Buttons-List-History">History Points <img src="/Assents/Icons/plus-circle.svg" alt=""></button>
+            
+            <div id="overlay" style="display: none;">
+                <h2>Adicionar Ponto de Coleta</h2>
+                
+                  <label id="label-Location" for="location">Localização:</label>
+                  <input type="text" id="location" name="location" required><br><br>
+                  
+                  <label id="Lable-Eco" for="type">Tipo de Ecoponto:</label>
+                  <input type="selector" id="type" name="type" required><br><br>
+                  
+                  <label id="lable-Img" for="image">Imagem:</label>
+                  <input type="file" id="image" name="image" accept="image/*"><br><br>
+                  
+                  <button type="submit">Enviar</button>
+                  <button type="button" onclick="closeOverlay()">Voltar</button>
+                
+              </div>
         </div>
     </div>
 </body>
-
+<script>
+    function openOverlay() {
+      document.getElementById("overlay").style.display = "block";
+    }
+  
+    function closeOverlay() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
 </html>
