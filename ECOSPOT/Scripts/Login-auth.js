@@ -27,7 +27,7 @@ const errorMessage = document.querySelector('.Error-Message');
 
 // Função para fazer o login do usuário
 async function loginUser() {
-    console.log(emailInput)
+    //console.log(emailInput)
     const email = emailInput.value;
     const password = passwordInput.value;
   
@@ -38,6 +38,9 @@ async function loginUser() {
   
       // já obtive o user, e tenho o email
       // ir à bd buscar o user com o email
+      const usersRef = collection(db, 'users');
+    const q = query(usersRef, where('email', '==', email));
+    const querySnapshot = await getDocs(q);
       // já obtive o user da bd
       // já posso validar o seu type
 
