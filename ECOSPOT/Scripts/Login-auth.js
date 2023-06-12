@@ -39,7 +39,7 @@ async function loginUser() {
       // já obtive o user, e tenho o email
       // ir à bd buscar o user com o email
       // já obtive o user da bd
-      // já posso validar o seu tipo
+      // já posso validar o seu type
 
       // Limpar os campos do formulário
       emailInput.value = '';
