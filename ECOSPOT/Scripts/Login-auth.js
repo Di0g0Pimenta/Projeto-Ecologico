@@ -27,10 +27,6 @@ const errorMessage = document.querySelector('.Error-Message');
 
 // Função para fazer o login do usuário
 async function loginUser() {
-<<<<<<< Updated upstream
-  //console.log(emailInput)
-=======
->>>>>>> Stashed changes
   const email = emailInput.value;
   const password = passwordInput.value;
 
@@ -49,11 +45,7 @@ async function loginUser() {
       if (userData.type === 'user') {
         window.location.href = 'http://127.0.0.1:5500/Pages/Home-User.html';
       } else if (userData.type === 'admin') {
-<<<<<<< Updated upstream
-        window.location.href = 'http://127.0.0.1:5500/Pages/Home-Admin-Map.html';
-=======
         window.location.href = 'http://127.0.0.1:5500/Pages/Home-Admin.html';
->>>>>>> Stashed changes
       }
     } else {
       // Usuário não encontrado
@@ -70,10 +62,6 @@ async function loginUser() {
   }
 }
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 // Associar a função ao evento de clique do botão de login
 const loginButton = document.querySelector('.Button-Login-Screan');
 loginButton.addEventListener('click', loginUser);
