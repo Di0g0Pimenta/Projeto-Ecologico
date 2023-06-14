@@ -16,8 +16,8 @@
 
 #map {
     position: absolute;
-    
-
+    width: 342px;
+    height: 576px;
 }
 
 .tab-container {
