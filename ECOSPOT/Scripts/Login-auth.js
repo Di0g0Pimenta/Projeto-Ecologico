@@ -27,40 +27,43 @@ const errorMessage = document.querySelector('.Error-Message');
 
 // Função para fazer o login do usuário
 async function loginUser() {
-    //console.log(emailInput)
-    const email = emailInput.value;
-    const password = passwordInput.value;
-  
-    try {
-      // Fazer o login do usuário no Firebase Authentication
-      const user = await signInWithEmailAndPassword(auth, email, password);
-      console.log(user.user)
-  
-      // já obtive o user, e tenho o email
-      // ir à bd buscar o user com o email
-      const usersRef = collection(db, 'users');
+  //console.log(emailInput)
+  const email = emailInput.value;
+  const password = passwordInput.value;
+
+  try {
+    const user = await signInWithEmailAndPassword(auth, email, password);
+    const usersRef = collection(db, 'users');
     const q = query(usersRef, where('email', '==', email));
     const querySnapshot = await getDocs(q);
-      // já obtive o user da bd
-      // já posso validar o seu type
 
-      // Limpar os campos do formulário
-      emailInput.value = '';
-      passwordInput.value = '';
-  
-      // Redirecionar para a página correta
-      if (type === 'user') {
+    // Verificar se o documento do usuário existe
+    if (querySnapshot.size > 0) {
+      const userDoc = querySnapshot.docs[0]; // Obtém o primeiro documento retornado
+      const userData = userDoc.data();
+
+      // Verificar o tipo do usuário
+      if (userData.type === 'user') {
         window.location.href = 'http://127.0.0.1:5500/Pages/Home-User.html';
-      } else if (type === 'admin') {
-        window.location.href = 'http://127.0.0.1:5500/Pages/Home-Admin-List.html';
+      } else if (userData.type === 'admin') {
+        window.location.href = 'http://127.0.0.1:5500/Pages/Home-Admin-Map.html';
       }
-
-    } catch (error) {
-      console.log(error);
-      errorMessage.textContent = 'Ocorreu algum erro. Por favor tente outra vez.';
+    } else {
+      // Usuário não encontrado
+      errorMessage.textContent = 'Usuário não encontrado.';
     }
+
+    // Limpar os campos do formulário
+    emailInput.value = '';
+    passwordInput.value = '';
+
+  } catch (error) {
+    console.log(error);
+    errorMessage.textContent = 'Ocorreu algum erro. Por favor tente outra vez.';
   }
-  
-  // Associar a função ao evento de clique do botão de login
-  const loginButton = document.querySelector('.Button-Login-Screan');
-  loginButton.addEventListener('click', loginUser);
+}
+
+
+// Associar a função ao evento de clique do botão de login
+const loginButton = document.querySelector('.Button-Login-Screan');
+loginButton.addEventListener('click', loginUser);
